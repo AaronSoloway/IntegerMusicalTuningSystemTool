@@ -104,7 +104,7 @@ h3.control-header {
     width: 100%;
     height: 20px;
     position: absolute;
-    top: calc(50% + 10px);
+    top: calc(50% + 1px);
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -116,7 +116,7 @@ h3.control-header {
     font-size: 14px;
     color: #333;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     text-align: center;
     width: 100%;
 }
@@ -181,10 +181,11 @@ button {
 .volume-control {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: top;
     gap: 8px;
     min-width: 100px;
-    margin: 0 10px;
+    margin: 0 1px;
+    min-height: 103px;
 }
 
 .volume-control input[type="range"] {
@@ -193,7 +194,7 @@ button {
 }
 
 .volume-control label {
-    margin: 0;
+    margin-bottom: 4px;
 }
 
 .playback-controls {
